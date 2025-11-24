@@ -12,14 +12,14 @@ public class PasswordValidator {
             return false;
         }
 
-        // Solo 1 espacio permitido, y no al inicio ni final
+
         if (password.startsWith(" ") || password.endsWith(" ")) return false;
         if (password.chars().filter(c -> c == ' ').count() > 1) return false;
 
         // Validaciones simples con regex
-        if (!password.matches(".*[A-Z].*")) return false;          // mayúscula
-        if (!password.matches(".*[a-z].*")) return false;          // minúscula
-        if (!password.matches(".*[0-9].*")) return false;          // número
+        if (!password.matches(".*[A-Z].*")) return false;
+        if (!password.matches(".*[a-z].*")) return false;
+        if (!password.matches(".*[0-9].*")) return false;
         if (!password.matches(".*[!@#$%^&*()_\\-+={}\\[\\]|\\\\:;\"'<>.,?/].*")) return false; // especial
 
         // Revisar caracteres NO permitidos (solo letras, números, especiales y 1 espacio)

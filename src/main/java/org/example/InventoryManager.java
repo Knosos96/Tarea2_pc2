@@ -25,7 +25,7 @@ public class InventoryManager {
             throw new IllegalArgumentException("La cantidad debe ser mayor que cero");
         }
 
-        // Validación: máximo permitido 1000
+
         if (quantity > 1000) {
             throw new IllegalArgumentException("La cantidad no puede ser mayor a 1000");
         }

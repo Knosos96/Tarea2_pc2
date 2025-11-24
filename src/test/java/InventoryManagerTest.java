@@ -78,58 +78,58 @@ public class InventoryManagerTest {
         assertEquals(TotalQuantity,inventoryManager.getStock(item));
     }
 
-//    @Test
-//    public void ItemNull() {
-//        String item = null;
-//        int quantity = 5;
-//
-//        Exception exception = assertThrows(IllegalArgumentException.class, () ->
-//                inventoryManager.addItem(item, quantity));
-//
-//        assertEquals("El nombre del producto no puede estar vacío", exception.getMessage());
-//    }
-//
-//    @Test
-//    public void ItemLessThanTwoChars() {
-//        String item = "A";
-//        int quantity = 5;
-//
-//        Exception exception = assertThrows(IllegalArgumentException.class, () ->
-//                inventoryManager.addItem(item, quantity));
-//
-//        assertEquals("El nombre del producto debe tener entre 2 y 50 caracteres", exception.getMessage());
-//    }
-//
-//    @Test
-//    public void ItemGreaterThanFiftyChars() {
-//        String item = "a".repeat(51);
-//        int quantity = 5;
-//
-//        Exception exception = assertThrows(IllegalArgumentException.class, () ->
-//                inventoryManager.addItem(item, quantity));
-//
-//        assertEquals("El nombre del producto debe tener entre 2 y 50 caracteres", exception.getMessage());
-//    }
-//
-//    @Test
-//    public void QuantityGreaterThanThousand() {
-//        String item = "Teclado";
-//        int quantity = 1500;
-//
-//        Exception exception = assertThrows(IllegalArgumentException.class, () ->
-//                inventoryManager.addItem(item, quantity));
-//
-//        assertEquals("La cantidad no puede ser mayor a 1000", exception.getMessage());
-//    }
-//    @Test
-//    public void ItemWithSpaces() {
-//        String item = "   Laptop   ";
-//        int quantity = 10;
-//
-//        inventoryManager.addItem(item, quantity);
-//
-//        assertEquals(10, inventoryManager.getStock("Laptop"));
-//    }
+    @Test
+    public void ItemNull() {
+        String item = null;
+        int quantity = 5;
+
+        Exception exception = assertThrows(IllegalArgumentException.class, () ->
+                inventoryManager.addItem(item, quantity));
+
+        assertEquals("El nombre del producto no puede estar vacío", exception.getMessage());
+    }
+
+    @Test
+    public void ItemLessThanTwoChars() {
+        String item = "A";
+        int quantity = 5;
+
+        Exception exception = assertThrows(IllegalArgumentException.class, () ->
+                inventoryManager.addItem(item, quantity));
+
+        assertEquals("El nombre del producto debe tener entre 2 y 50 caracteres", exception.getMessage());
+    }
+
+    @Test
+    public void ItemGreaterThanFiftyChars() {
+        String item = "a".repeat(51);
+        int quantity = 5;
+
+        Exception exception = assertThrows(IllegalArgumentException.class, () ->
+                inventoryManager.addItem(item, quantity));
+
+        assertEquals("El nombre del producto debe tener entre 2 y 50 caracteres", exception.getMessage());
+    }
+
+    @Test
+    public void QuantityGreaterThanThousand() {
+        String item = "Teclado";
+        int quantity = 1500;
+
+        Exception exception = assertThrows(IllegalArgumentException.class, () ->
+                inventoryManager.addItem(item, quantity));
+
+        assertEquals("La cantidad no puede ser mayor a 1000", exception.getMessage());
+    }
+    @Test
+    public void ItemWithSpaces() {
+        String item = "   Laptop   ";
+        int quantity = 10;
+
+        inventoryManager.addItem(item, quantity);
+
+        assertEquals(10, inventoryManager.getStock("Laptop"));
+    }
 
 
 

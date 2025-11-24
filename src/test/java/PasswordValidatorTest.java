@@ -70,48 +70,48 @@ public class PasswordValidatorTest {
         String password = "AAAAA123!";
         assertFalse(passwordValidator.isValid(password));
     }
-//
-//    @Test
-//    public void PasswordWithoutDigits() {
-//        String password = "SecureTest!";
-//        assertFalse(passwordValidator.isValid(password));
-//    }
-//
-//    @Test
-//    public void PasswordWithoutSpecialChar() {
-//        String password = "Secure1234";
-//        assertFalse(passwordValidator.isValid(password));
-//    }
-//
-//    @Test
-//    public void PasswordSpaceAtStart() {
-//        String password = " Secure123!";
-//        assertFalse(passwordValidator.isValid(password));
-//    }
-//
-//    @Test
-//    public void PasswordSpaceAtEnd() {
-//        String password = "Secure123! ";
-//        assertFalse(passwordValidator.isValid(password));
-//    }
-//
-//    @Test
-//    public void PasswordInvalidCharacter() {
-//        String password = "Secure123!ñ";
-//        assertFalse(passwordValidator.isValid(password));
-//    }
-//
-//    @Test
-//    public void PasswordMultipleMissingRequirements() {
-//        String password = "aaaaaaaa";
-//        assertFalse(passwordValidator.isValid(password));
-//    }
-//
-//    @Test
-//    public void PasswordLengthGreaterThan64() {
-//        String password = "A1!" + "a".repeat(62);
-//        assertFalse(passwordValidator.isValid(password));
-//    }
+
+    @Test
+    public void PasswordWithoutDigits() {
+        String password = "SecureTest!";
+        assertFalse(passwordValidator.isValid(password));
+    }
+
+    @Test
+    public void PasswordWithoutSpecialChar() {
+        String password = "Secure1234";
+        assertFalse(passwordValidator.isValid(password));
+    }
+
+    @Test
+    public void PasswordSpaceAtStart() {
+        String password = " Secure123!";
+        assertFalse(passwordValidator.isValid(password));
+    }
+
+    @Test
+    public void PasswordSpaceAtEnd() {
+        String password = "Secure123! ";
+        assertFalse(passwordValidator.isValid(password));
+    }
+
+    @Test
+    public void PasswordInvalidCharacter() {
+        String password = "Secure123!ñ";
+        assertFalse(passwordValidator.isValid(password));
+    }
+
+    @Test
+    public void PasswordMultipleMissingRequirements() {
+        String password = "aaaaaaaa";
+        assertFalse(passwordValidator.isValid(password));
+    }
+
+    @Test
+    public void PasswordLengthGreaterThan64() {
+        String password = "A1!" + "a".repeat(62);
+        assertFalse(passwordValidator.isValid(password));
+    }
 
 
 
