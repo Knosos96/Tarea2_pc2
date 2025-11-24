@@ -67,4 +67,61 @@ public class EmailTest {
 
     }
 
+//    @Test
+//    public void EmailLocalTerminaPunto() {
+//        String correo = "user.@dominio.com";
+//        assertFalse(emailTest.isValidEmail(correo));
+//    }
+//
+//    @Test
+//    public void EmailLocalConPuntosConsecutivos() {
+//        String correo = "us..er@dominio.com";
+//        assertFalse(emailTest.isValidEmail(correo));
+//    }
+//
+//    @Test
+//    public void EmailDominioConPuntosConsecutivos() {
+//        String correo = "user@do..minio.com";
+//        assertFalse(emailTest.isValidEmail(correo));
+//    }
+//    @Test
+//    public void EmailExtensionMuyCorta() {
+//        String correo = "usuario@dominio.c";
+//        assertFalse(emailTest.isValidEmail(correo));
+//    }
+//
+//    @Test
+//    public void EmailConEspacio() {
+//        String correo = "us er@dominio.com";
+//        assertFalse(emailTest.isValidEmail(correo));
+//    }
+//
+//    @Test
+//    public void EmailLocalCaracterInvalido() {
+//        String correo = "us€r@dominio.com";
+//        assertFalse(emailTest.isValidEmail(correo));
+//    }
+//
+//    @Test
+//    public void EmailConDobleArroba() {
+//        String correo = "user@@dominio.com";
+//        assertFalse(emailTest.isValidEmail(correo));
+//    }
+//
+//    @Test
+//    public void EmailDemasiadoLargo() {
+//        String correo = "a".repeat(260) + "@dominio.com";
+//        assertFalse(emailTest.isValidEmail(correo));
+//    }
+//    @Test
+//    public void EmailDominioCaracteresInvalidos() {
+//        String correo = "user@domiñio.com"; // 'ñ' NO permitido en dominio
+//        assertFalse(emailTest.isValidEmail(correo));
+//    }
+//    @Test
+//    public void EmailLengthLessThanSix() {
+//        String correo = "a@b.c"; // 5 caracteres → inválido
+//        assertFalse(emailTest.isValidEmail(correo));
+//    }
+
 }
