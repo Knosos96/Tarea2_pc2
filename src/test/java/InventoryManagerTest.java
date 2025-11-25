@@ -114,7 +114,7 @@ public class InventoryManagerTest {
     @Test
     public void QuantityGreaterThanThousand() {
         String item = "Teclado";
-        int quantity = 1500;
+        int quantity = 1002;
 
         Exception exception = assertThrows(IllegalArgumentException.class, () ->
                 inventoryManager.addItem(item, quantity));
